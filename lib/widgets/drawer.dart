@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/utils/mystyles.dart';
+import 'package:flutter_app/utils/routes.dart';
 import '';
 
 class MyDrawer extends StatelessWidget{
@@ -32,6 +33,11 @@ class MyDrawer extends StatelessWidget{
             ListTile(
               leading: Icon(CupertinoIcons.profile_circled, color: Colors.white),
               title: Text("Profile", style: MyStyles.whiteHeadingText,),
+            ),
+            ListTile(
+              leading: Icon(CupertinoIcons.clear_thick, color: Colors.white),
+              title: Text("Close", style: MyStyles.whiteHeadingText),
+              onTap: () {Navigator.pop(context);},
             ),
           ],
         ),
