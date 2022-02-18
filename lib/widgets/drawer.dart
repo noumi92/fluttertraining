@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/utils/mystyles.dart';
-import 'package:flutter_app/utils/routes.dart';
-import '';
 
 class MyDrawer extends StatelessWidget{
+  const MyDrawer({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -12,12 +11,9 @@ class MyDrawer extends StatelessWidget{
         color: Colors.deepPurple,
         child: ListView(
           children: [
-            DrawerHeader(
+            const DrawerHeader(
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
-                  decoration: BoxDecoration(
-                      color: Colors.purple
-                  ),
                 margin: EdgeInsets.zero,
                 accountName: Text("Nouman Karim", style: MyStyles.whiteHeadingText),
                 accountEmail: Text("noumi92@hotmail.com", style: MyStyles.whiteRegularText),
@@ -26,17 +22,17 @@ class MyDrawer extends StatelessWidget{
                 )
             )
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(CupertinoIcons.home, color: Colors.white),
               title: Text("Home", style: MyStyles.whiteHeadingText,),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(CupertinoIcons.profile_circled, color: Colors.white),
               title: Text("Profile", style: MyStyles.whiteHeadingText,),
             ),
             ListTile(
-              leading: Icon(CupertinoIcons.clear_thick, color: Colors.white),
-              title: Text("Close", style: MyStyles.whiteHeadingText),
+              leading: const Icon(CupertinoIcons.clear_thick, color: Colors.white),
+              title: const Text("Close", style: MyStyles.whiteHeadingText),
               onTap: () {Navigator.pop(context);},
             ),
           ],
