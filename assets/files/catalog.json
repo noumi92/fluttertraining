@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": " 009590586-011-40",
+      "id": "009590586-011-40",
       "name": "Roman GTMK Shoes",
       "desc": "\nProduct Code: 009590586-011-40\navailability: in stock\n",
       "price": 13995,
@@ -17,12 +17,12 @@
       "image": "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/IMG_1924.jpg"
     },
     {
-      "id": "",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "color": "",
-      "image": ""
+      "id": "b001",
+      "name": "Boresight Data Disk",
+      "desc": "Feel the difference in comfort with our uniquely designed Technology which provides streamlined extra supportive cushioning in the foot-beds, where you need it... ",
+      "price": 5495,
+      "color": "brown",
+      "image": "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/IMG_1924.jpg"
     }
   ]
 }

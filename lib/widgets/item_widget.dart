@@ -15,7 +15,7 @@ class ItemWidget extends StatelessWidget {
       elevation: 2.0,
       child: ListTile(
         onTap: (){},
-        leading: Image.network(item.imageUrl,),
+        leading: Image.network(item.image,),
         title: Text(item.name),
         subtitle: Text(item.desc),
         trailing: Text("\$${item.price}"),
